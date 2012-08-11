@@ -207,6 +207,17 @@ end
 ##############
 
 desc "Default deploy task"
+
+task :publish => [:generate, :deploy] do 
+    system "git add ."
+    system "git add -u"
+    puts "\n## Commiting: updated at #{Time.now.utc}"
+    message = "updated at #{Time.now.utc}"
+    system "git commit -m \"#{message}\""
+    system "git push"
+    puts "\n## Publish complete"
+end
+
 task :deploy do
   # Check if preview posts exist, which should not be published
   if File.exists?(".preview-mode")
