@@ -3,7 +3,7 @@ layout: post
 title: "开始octopress之旅"
 date: 2012-08-10 15:55
 comments: true
-categories: 
+categories: 其它
 ---
 
 折腾了一下午,终于把基于octopress的环境搭起来了. 
