@@ -11,3 +11,9 @@ categories:
 不得不说, octopress + github + sublime text 2 简直就是利器. 
 
 发第一篇文章纪念一下. 
+
+顺便测试一下代码语法高亮(pygments)
+
+```js
+	alert('hello octopress!');
+```
